@@ -9,8 +9,4 @@ Some key features in this game include:
 - Option to reset
 - Some level of dynamic UI
 
-## Demo 
-
-![Sudoku Game Demo](./sudoku-game.gif)
-
 Thank you for checking out my project! 
