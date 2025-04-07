@@ -11,6 +11,6 @@ Some key features in this game include:
 
 ## Demo 
 
-![Sudoku Game Demo](./sudoku_game.gif)
+![Sudoku Game Demo](./sudoku-game.gif)
 
 Thank you for checking out my project! 
