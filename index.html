@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sudoku Game</title>
+    <link rel="stylesheet" href="sudoku.css">
+    <style>
+        body.dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        button.dark-mode {
+            background-color: #ffffff;
+            color: #121212;
+        }
+    </style>
+</head>
+<body>
+    <button id="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <h1>Sudoku</h1>
+    <hr>
+    <h2 id="errors">0</h2>
+    <div id="board"></div>
+    <br>
+    <div id="digits"></div>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            document.getElementById('dark-mode-toggle').classList.toggle('dark-mode');
+        }
+    </script>
+    <script src="sudoku.js"></script>
+</body>
+</html>

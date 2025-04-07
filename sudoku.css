@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #cdcdfa;
+    color: #333;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #110f0f;
+}
+
+#errors {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 20px;
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    background: #ffffff;
+    border: 4px solid #333;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.tile {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    border: 1px solid #333;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+.tile.start {
+    background-color: #f8f9fa;
+    color: #222;
+    font-weight: bold;
+    border: 1px solid #777;
+    cursor: not-allowed;
+    box-sizing: border-box;
+}
+
+.horizontal-line {
+    border-bottom: 3px solid black;
+}
+
+.vertical-line {
+    border-right: 3px solid black;
+}
+
+#digits {
+    width: 450px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.number {
+    width: 48px;
+    height: 48px;
+    border: 2px solid black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 4px;
+    box-sizing: border-box;
+}
+
+.number.selected {
+    background: #90bda3;
+    color: white;
+    border: 3px solid #4aff96;
+    transform: scale(1.1);
+}
+
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode #board {
+    background: #333;
+    border-color: white;
+}
+
+.dark-mode .tile {
+    border-color: #777;
+    color: white;
+}
+
+.dark-mode .tile.start {
+    background: #444;
+}
+
+.dark-mode .number {
+    background: #666;
+    color: white;
+    border-color: white;
+}
+
+.dark-mode .number:hover {
+    background: #26814c;
+}
